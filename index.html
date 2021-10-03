@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ мест в кино</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<header>
+    <h1>Добро пожаловать в интернет-кинотеатр.</h1>
+    <h1>Пожалуйста выберите фильм и место.</h1>
+</header>
+
+<main id="main">
+<!--    <div class="movie">-->
+<!--        <img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg" alt="" class="">-->
+<!--    </div>-->
+
+<!--    <div class="movie-info">-->
+<!--        <h3>Movie Title</h3>-->
+<!--    </div>-->
+</main>
+
+
+<div class="movie-container">
+    <!-- <label>Pick a movie</label> -->
+    <select id="movie">
+        <option selected value="0" disabled>Выбрать фильм:</option>
+        <option value="10">Главный герой(2021), цена 1 билета 10 BYN</option>
+        <option value="8">Звёздный рубеж (2021), цена 1 билета - 7 BYN</option>
+        <option value="7">Бросок кобры. Снейк Айз (2021), цена 1 билета - 8 BYN</option>
+        <option value="5">Веном, цена 1 билета - 5 BYN</option>
+    </select>
+</div>
+
+<div class="container">
+    <div class="screen"></div>
+    <p>Экран</p>
+
+    <div class="row">
+        <div class="seat">A1</div>
+        <div class="seat">A2</div>
+        <div class="seat">A3</div>
+        <div class="seat">A4</div>
+        <div class="seat">A5</div>
+        <div class="seat">A6</div>
+        <div class="seat">A7</div>
+        <div class="seat">A8</div>
+        <div class="seat">A9</div>
+        <div class="seat">A10</div>
+
+    </div>
+    <div class="row">
+        <div class="seat">B1</div>
+        <div class="seat">B2</div>
+        <div class="seat">B3</div>
+        <div class="seat">B4</div>
+        <div class="seat">B5</div>
+        <div class="seat">B6</div>
+        <div class="seat">B7</div>
+        <div class="seat">B8</div>
+        <div class="seat">B9</div>
+        <div class="seat">B10</div>
+    </div>
+    <div class="row">
+        <div class="seat">C1</div>
+        <div class="seat">C2</div>
+        <div class="seat">C3</div>
+        <div class="seat">C4</div>
+        <div class="seat">C5</div>
+        <div class="seat">C6</div>
+        <div class="seat">C7</div>
+        <div class="seat">C8</div>
+        <div class="seat">C9</div>
+        <div class="seat">C10</div>
+    </div>
+    <div class="row">
+        <div class="seat">D</div>
+        <div class="seat">D2</div>
+        <div class="seat">D3</div>
+        <div class="seat">D4</div>
+        <div class="seat">D5</div>
+        <div class="seat">D6</div>
+        <div class="seat">D7</div>
+        <div class="seat">D8</div>
+        <div class="seat">D9</div>
+        <div class="seat">D10</div>
+    </div>
+    <div class="row">
+        <div class="seat">E1</div>
+        <div class="seat">E2</div>
+        <div class="seat">E3</div>
+        <div class="seat">E4</div>
+        <div class="seat blocked">E5</div>
+        <div class="seat blocked">E6</div>
+        <div class="seat">E7</div>
+        <div class="seat">E8</div>
+        <div class="seat">E9</div>
+        <div class="seat">E10</div>
+    </div>
+    <div class="row">
+        <div class="seat">F1</div>
+        <div class="seat">F2</div>
+        <div class="seat">F2</div>
+        <div class="seat">F4</div>
+        <div class="seat">F5</div>
+        <div class="seat">F6</div>
+        <div class="seat">F7</div>
+        <div class="seat">F8</div>
+        <div class="seat">F9</div>
+        <div class="seat">F10</div>
+    </div>
+</div>
+
+<div class="text">
+    <p>Вы выбрали: <span id="count">0</span> мест(о) общей стоимостью: <span id="total"> </span> BYN, </p>
+    <p>фильм: <span id="movie_selected"> </span></p>
+</div>
+
+<ul class="legend">
+    <li>
+        <small>Место: </small>
+        <div class="seat"></div>
+        <small>свободно</small>
+    </li>
+    <li>
+        <div class="seat selected"></div>
+        <small>выбрано</small>
+    </li>
+    <li>
+        <div class="seat blocked"></div>
+        <small>занято</small>
+    </li>
+</ul>
+
+<script src="./script.js"></script>
+</body>
+</html>
